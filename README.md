@@ -1,6 +1,6 @@
 ## plyr
 The coolest terminal based Spotify controller and audio player with multiple themes
-Scroll down to preview
+\nScroll down to preview
 ## How to install
 1. Click the big green "Code" button and hit "Download ZIP"
 2. Extract the files
