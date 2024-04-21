@@ -11,6 +11,7 @@
 ## How to get client ID/Secret
 Go to https://developer.spotify.com/dashboard/ and create an app
 set the redirect uri to http://localhost:8080/callback
+
 Go to step 4 above
 ## Tips
 **PLYR Commands:**
