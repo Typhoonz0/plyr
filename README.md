@@ -13,10 +13,10 @@ Go to https://developer.spotify.com/dashboard/ and create an app
 set the redirect uri to http://localhost:8080/callback
 Go to step 4 above
 ## Tips
-PLYR Commands:
+**PLYR Commands:**
 - Enter 'm' to go to the main menu, 'z' to pause, 'x' to resume, 'c' to rewind, 'v' to skip the song
 - dont worry if the screen gets cleared, the command will still excecute
-Local Files:
+**Local Files:**
 - When the song ends, press CTRL+C, then 4
 ## Screenshots
 ![Screenshot 2024-04-21 165500](https://github.com/Typhoonz0/plyr/assets/122064502/431e0f1f-db8b-421d-9ccb-2fe96c1271b7)
