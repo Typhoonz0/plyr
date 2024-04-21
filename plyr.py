@@ -13,8 +13,8 @@ system("title " + f"plyr by xliam1")
 # Initialize Spotipy with your credentials
 scope = "user-read-playback-state user-modify-playback-state"
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
-    client_id="1abdb3865942403eb260785aec8e8cc0",
-    client_secret="a811dc547f184b8bbc789c6dd42472c2",
+    client_id="client_id",
+    client_secret="client_secret",
     redirect_uri="http://localhost:8080/callback",
     scope=scope
 ))
