@@ -14,7 +14,7 @@ set the redirect uri to http://localhost:8080/callback
 Go to step 4 above
 ## Tips
 **PLYR Commands:**
-- Enter 'm' to go to the main menu, 'z' to pause, 'x' to resume, 'c' to rewind, 'v' to skip the song
+- 'z' to pause, 'x' to resume, 'c' to rewind, 'v' to skip the song (Only works if you have Spotify Premium)
 - dont worry if the screen gets cleared, the command will still excecute
   
 **Local Files:**
