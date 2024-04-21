@@ -16,6 +16,7 @@ Go to step 4 above
 **PLYR Commands:**
 - Enter 'm' to go to the main menu, 'z' to pause, 'x' to resume, 'c' to rewind, 'v' to skip the song
 - dont worry if the screen gets cleared, the command will still excecute
+  
 **Local Files:**
 - When the song ends, press CTRL+C, then 4
 ## Screenshots
