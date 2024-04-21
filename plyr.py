@@ -4,9 +4,9 @@ from os import system
 import os
 import time
 from pystyle import Write, Colors
-import threading # type: ignore
+import threading 
 import requests
-import subprocess # type: ignore
+import subprocess 
 import pystyle
 from playsound import playsound
 system("title " + f"plyr by xliam1")
@@ -87,31 +87,22 @@ def get_current_track():
             duration_ms = current_track['item']['duration_ms']
             progress_ms = current_track['progress_ms']
             
-            # Convert milliseconds to seconds
             duration_seconds = ms_to_seconds(duration_ms)
             progress_seconds = ms_to_seconds(progress_ms)
             
-            # Calculate remaining seconds
             remaining_seconds = duration_seconds - progress_seconds
 
             progress_percentage = (progress_seconds / duration_seconds) * 100
             
-            # Create a simple progress bar
             progress_bar_length = int(progress_percentage / 10)
             progress_bar = '['  + '#' * progress_bar_length + '-' * (10 - progress_bar_length) + ']'
             
-            # Format progress and remaining seconds
             progress_time = format_seconds(progress_seconds)
             remaining_time = format_seconds(remaining_seconds)
             
-
-
-            # Clear the terminal screen
             time.sleep(1) 
             system("cls")
-            #print("\033[F" + " " * 80 + "\033[F")  # Clear previous line
-            if ascii != 1:
-                print(f"""
+            print(f"""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠁⠸⢳⡄⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⢸⠸⠀⡠⣄⠀⠀⠀⠀⠀
@@ -131,8 +122,7 @@ def get_current_track():
 ⠀⠀⠀⠀⡇⣿⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠦⠀⠀⠀⠀⠀⠀⡇⢹⢿⡀
 ⠀⠀⠀⠀⠁⠛⠓⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠼⠇⠁
 """)
-            else:
-                print(f"""
+            print(f"""
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠁⠸⢳⡄⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⢸⠸⠀⡠⣄⠀⠀⠀⠀⠀
@@ -201,7 +191,6 @@ def run_spotify_program():
             
             elif user_input.lower() == 'help':
                 print("Enter 'z' to pause, 'x' to resume, 'c' to rewind, 'v' to skip the song: ")
-    # Start the input thread
     input_thread = threading.Thread(target=input_thread)
     input_thread.start()   
     while True:
